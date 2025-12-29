@@ -26,9 +26,9 @@ const WhatYouGet = () => {
             {benefits.map((benefit, index) => (
               <div
                 key={index}
-                className="flex items-center gap-4 bg-background border border-border rounded-xl p-5 hover:border-primary/50 transition-all duration-300 shadow-card"
+                className="card-hover card-hover-scale flex items-center gap-4 bg-background border border-border rounded-xl p-5 hover:border-primary/50 shadow-card"
               >
-                <div className="w-12 h-12 rounded-xl bg-secondary flex items-center justify-center shrink-0">
+                <div className="icon-animate w-12 h-12 rounded-xl bg-secondary flex items-center justify-center shrink-0">
                   <benefit.icon className="w-6 h-6 text-primary" />
                 </div>
                 <span className="text-foreground font-medium">{benefit.text}</span>

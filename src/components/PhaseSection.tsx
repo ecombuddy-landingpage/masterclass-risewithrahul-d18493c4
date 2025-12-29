@@ -29,14 +29,14 @@ const PhaseSection = () => {
 
         <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
           {phases.map((phase, index) => <div key={index} className="relative group">
-              <div className="relative bg-background border border-border rounded-2xl p-8 h-full hover:border-primary/50 transition-all duration-300 hover:-translate-y-1 shadow-card">
+              <div className="card-hover card-hover-scale relative bg-background border border-border rounded-2xl p-8 h-full hover:border-primary/50 shadow-card">
                 {/* Phase number */}
-                <div className="text-6xl font-display font-bold mb-4 text-slate-400">
+                <div className="text-6xl font-display font-bold mb-4 text-muted-foreground/40 group-hover:text-primary/30 transition-colors">
                   {phase.number}
                 </div>
                 
                 {/* Icon */}
-                <div className="w-14 h-14 rounded-xl bg-primary flex items-center justify-center mb-4">
+                <div className="icon-animate w-14 h-14 rounded-xl bg-primary flex items-center justify-center mb-4">
                   <phase.icon className="w-7 h-7 text-primary-foreground" />
                 </div>
 
