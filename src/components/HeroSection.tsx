@@ -1,6 +1,41 @@
 import { Calendar, Clock, Video, Globe } from "lucide-react";
+import { useState, useEffect } from "react";
 import rahulAward from "@/assets/rahul-award.jpg";
+
 const HeroSection = () => {
+  const [timeLeft, setTimeLeft] = useState({
+    days: 0,
+    hours: 0,
+    minutes: 0,
+    seconds: 0,
+  });
+
+  useEffect(() => {
+    // Target date: 8th January 2025, 12:00 PM IST
+    const targetDate = new Date("2025-01-08T12:00:00+05:30");
+
+    const calculateTimeLeft = () => {
+      const now = new Date();
+      const difference = targetDate.getTime() - now.getTime();
+
+      if (difference > 0) {
+        setTimeLeft({
+          days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+          hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+          minutes: Math.floor((difference / 1000 / 60) % 60),
+          seconds: Math.floor((difference / 1000) % 60),
+        });
+      } else {
+        setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+      }
+    };
+
+    calculateTimeLeft();
+    const timer = setInterval(calculateTimeLeft, 1000);
+
+    return () => clearInterval(timer);
+  }, []);
+
   const infoCards = [{
     icon: Calendar,
     label: "Date",
@@ -22,6 +57,7 @@ const HeroSection = () => {
     value: "English & Hindi",
     subtext: ""
   }];
+
   return <section className="min-h-screen bg-gradient-hero pt-6 pb-12">
       <div className="container">
         {/* Top Badge */}
@@ -83,6 +119,29 @@ const HeroSection = () => {
             <p className="text-center text-primary font-bold italic text-lg">
               100% SATISFACTION GUARANTEED!!
             </p>
+
+            {/* Countdown Timer */}
+            <div className="bg-card rounded-xl p-4 sm:p-5 shadow-card border border-border">
+              <p className="text-center text-muted-foreground text-sm mb-3">⏰ Masterclass starts in:</p>
+              <div className="grid grid-cols-4 gap-2 sm:gap-3">
+                <div className="bg-secondary rounded-lg p-2 sm:p-3 text-center">
+                  <p className="font-display text-2xl sm:text-3xl font-bold text-primary">{timeLeft.days}</p>
+                  <p className="text-muted-foreground text-xs sm:text-sm">Days</p>
+                </div>
+                <div className="bg-secondary rounded-lg p-2 sm:p-3 text-center">
+                  <p className="font-display text-2xl sm:text-3xl font-bold text-primary">{timeLeft.hours}</p>
+                  <p className="text-muted-foreground text-xs sm:text-sm">Hours</p>
+                </div>
+                <div className="bg-secondary rounded-lg p-2 sm:p-3 text-center">
+                  <p className="font-display text-2xl sm:text-3xl font-bold text-primary">{timeLeft.minutes}</p>
+                  <p className="text-muted-foreground text-xs sm:text-sm">Minutes</p>
+                </div>
+                <div className="bg-secondary rounded-lg p-2 sm:p-3 text-center">
+                  <p className="font-display text-2xl sm:text-3xl font-bold text-primary">{timeLeft.seconds}</p>
+                  <p className="text-muted-foreground text-xs sm:text-sm">Seconds</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
