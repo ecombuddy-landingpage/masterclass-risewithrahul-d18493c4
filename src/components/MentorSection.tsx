@@ -46,12 +46,12 @@ const MentorSection = () => {
 
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center max-w-6xl mx-auto mb-12 lg:mb-16">
           {/* Single Image */}
-          <div className="relative max-w-sm mx-auto lg:max-w-none">
+          <div className="relative w-full">
             <div className="relative rounded-2xl overflow-hidden shadow-soft">
               <img
                 src={rahulTeaching}
                 alt="Rahul Sharma teaching at a workshop"
-                className="w-full h-auto object-cover"
+                className="w-full h-[400px] sm:h-[500px] lg:h-[600px] object-cover"
               />
             </div>
           </div>
