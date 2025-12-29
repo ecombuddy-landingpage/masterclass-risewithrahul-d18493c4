@@ -25,9 +25,9 @@ const WhoIsThisFor = () => {
             {criteria.map((item, index) => (
               <div
                 key={index}
-                className="flex items-start gap-4 bg-card border border-border rounded-xl p-6 shadow-card hover:border-primary/50 transition-all duration-300 group"
+                className="card-hover flex items-start gap-4 bg-card border border-border rounded-xl p-6 shadow-card hover:border-primary/50 group"
               >
-                <div className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center shrink-0 group-hover:bg-primary/20 transition-colors">
+                <div className="icon-animate w-10 h-10 rounded-full bg-secondary flex items-center justify-center shrink-0 group-hover:bg-primary/20 transition-colors">
                   <CheckCircle2 className="w-5 h-5 text-primary" />
                 </div>
                 <p className="text-foreground text-lg pt-1.5">{item}</p>
