@@ -18,12 +18,12 @@ const BonusSection = () => {
             <div className="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl" />
             
             <div className="relative">
-              <div className="flex items-center gap-3 mb-6">
+              <div className="flex flex-col sm:flex-row sm:items-center gap-3 mb-6">
                 <div className="w-12 h-12 rounded-xl bg-primary flex items-center justify-center">
                   <Gift className="w-6 h-6 text-primary-foreground" />
                 </div>
                 <div>
-                  <span className="bg-primary text-primary-foreground font-bold px-2 py-1 sm:px-3 rounded-xl text-base sm:text-xl md:text-2xl">Get bonuses worth ₹8,999 FREE 🎁</span>
+                  <span className="bg-primary text-primary-foreground font-bold px-3 py-1.5 sm:px-4 rounded-xl text-lg sm:text-xl md:text-2xl">Get bonuses worth ₹8,999 FREE 🎁</span>
                   <h2 className="font-display text-2xl font-bold text-foreground sm:text-2xl mx-0 px-0 my-[6px]">
                     For All Registrants
                   </h2>
