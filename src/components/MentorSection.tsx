@@ -74,7 +74,7 @@ const MentorSection = () => {
             </blockquote>
 
             <div className="flex justify-center pt-2">
-              <Button size="lg" className="text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 shadow-glow-lg ring-4 ring-primary/30 animate-pulse-subtle hover:shadow-glow hover:scale-[1.02] transition-all duration-300 w-full sm:w-auto" onClick={() => window.open("https://example.com/register", "_blank")}>
+              <Button size="lg" className="text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 shadow-glow-lg ring-4 ring-primary/30 animate-pulse-subtle hover:shadow-glow hover:scale-[1.02] transition-all duration-300 w-full sm:w-auto" onClick={() => window.open("https://risewithrahul.creatorlabs.in/add-to-cart", "_blank")}>
                 🚀 Register for the Masterclass Now
               </Button>
             </div>
