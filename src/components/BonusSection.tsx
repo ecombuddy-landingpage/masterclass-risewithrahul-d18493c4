@@ -13,15 +13,17 @@ const BonusSection = () => {
   return <section className="py-10 bg-card relative">
       <div className="container">
         <div className="max-w-4xl mx-auto">
-          <div className="relative bg-secondary border border-primary/30 rounded-3xl p-8 md:p-12 overflow-hidden shadow-soft">
+          <div className="relative bg-secondary border border-primary/30 rounded-2xl p-8 md:p-12 overflow-hidden shadow-soft">
             {/* Background decoration */}
             <div className="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl" />
             
             <div className="relative">
               <div className="flex items-center gap-3 mb-6">
-                
+                <div className="w-12 h-12 rounded-xl bg-primary flex items-center justify-center">
+                  <Gift className="w-6 h-6 text-primary-foreground" />
+                </div>
                 <div>
-                  <span className="text-primary-foreground px-3 py-1 rounded-full text-3xl bg-primary font-semibold">     Get bonuses worth ₹8,999 FREE 🎁            </span>
+                  <span className="bg-primary text-primary-foreground font-bold px-3 py-1 rounded-full text-3xl">Free bonus worth ₹8999 FREE 🎁  </span>
                   <h2 className="font-display text-2xl font-bold text-foreground sm:text-2xl mx-0 px-0 my-[6px]">
                     For All Registrants
                   </h2>
