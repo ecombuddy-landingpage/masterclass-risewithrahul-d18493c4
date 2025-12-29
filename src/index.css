@@ -285,15 +285,13 @@
 
 /* CTA Button Shake Animation */
 @keyframes cta-shake {
-  0%, 100% { transform: translateX(0); }
-  10%, 30%, 50%, 70%, 90% { transform: translateX(-2px); }
-  20%, 40%, 60%, 80% { transform: translateX(2px); }
+  0%, 85%, 100% { transform: translateX(0); }
+  88%, 94% { transform: translateX(-1px); }
+  91%, 97% { transform: translateX(1px); }
 }
 
 .animate-cta-shake {
-  animation: cta-shake 0.5s ease-in-out;
-  animation-delay: 2s;
-  animation-iteration-count: 3;
+  animation: cta-shake 3s ease-in-out infinite;
 }
 
 /* CTA Gradient */
