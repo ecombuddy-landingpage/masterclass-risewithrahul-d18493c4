@@ -11,8 +11,8 @@ const HeroSection = () => {
   });
 
   useEffect(() => {
-    // Target date: 8th January 2025, 12:00 PM IST
-    const targetDate = new Date("2025-01-08T12:00:00+05:30");
+    // Target date: 8th January 2026, 12:00 PM IST
+    const targetDate = new Date("2026-01-08T12:00:00+05:30");
 
     const calculateTimeLeft = () => {
       const now = new Date();
