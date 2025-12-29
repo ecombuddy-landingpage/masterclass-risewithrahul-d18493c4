@@ -26,8 +26,8 @@ const BonusSection = () => {
               </div>
 
               <div className="grid sm:grid-cols-3 gap-4">
-                {bonuses.map((bonus, index) => <div key={index} className="bg-card border border-border rounded-xl p-5 text-center hover:border-primary/50 transition-all duration-300 shadow-card">
-                    <div className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center mx-auto mb-3">
+                {bonuses.map((bonus, index) => <div key={index} className="card-hover bg-card border border-border rounded-xl p-5 text-center hover:border-primary/50 shadow-card">
+                    <div className="icon-animate w-12 h-12 rounded-full bg-secondary flex items-center justify-center mx-auto mb-3">
                       <bonus.icon className="w-6 h-6 text-primary" />
                     </div>
                     <p className="text-foreground font-medium text-sm">{bonus.title}</p>

@@ -17,13 +17,13 @@ const TestimonialsSection = () => {
         </h2>
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="bg-card rounded-xl p-6 shadow-card border border-border">
+            <div key={index} className="card-hover bg-card rounded-xl p-6 shadow-card border border-border hover:border-primary/50">
               <div className="flex gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} className="w-5 h-5 fill-primary text-primary" />
                 ))}
               </div>
-              <Quote className="w-8 h-8 text-primary/30 mb-2" />
+              <Quote className="icon-animate w-8 h-8 text-primary/30 mb-2" />
               <p className="text-foreground mb-4 italic">"{testimonial.quote}"</p>
               <p className="font-bold text-foreground">{testimonial.name}</p>
               <p className="text-muted-foreground text-sm">{testimonial.location}</p>
