@@ -22,7 +22,7 @@ const HeroSection = () => {
     value: "English & Hindi",
     subtext: ""
   }];
-  return <section className="min-h-screen bg-gradient-hero pt-8 pb-24">
+  return <section className="min-h-screen bg-gradient-hero pt-6 pb-12">
       <div className="container">
         {/* Top Badge */}
         <div className="flex justify-center mb-8">
