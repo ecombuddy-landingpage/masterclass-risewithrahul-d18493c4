@@ -35,12 +35,19 @@ jobs:
       run: sudo apt-get update && sudo apt-get install -y lftp
 
     - name: Deploy to Hostinger via FTP
-      timeout-minutes: 10
+      timeout-minutes: 15
       env:
         FTP_SERVER: ${{ secrets.FTP_SERVER }}
         FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
         FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
       run: |
         echo "🚀 Deploying to $FTP_SERVER..."
-        lftp -e "set ftp:ssl-allow no; set net:timeout 30; set net:max-retries 2; mirror -R ./dist /public_html --delete --parallel=3; quit" -u $FTP_USERNAME,$FTP_PASSWORD $FTP_SERVER
-        echo "✅ Deployment completed!"
+        
+        # Try with optimized settings first
+        if lftp -e "set ftp:ssl-allow no; set net:timeout 60; set net:max-retries 3; mirror -R ./dist /public_html --delete; quit" -u $FTP_USERNAME,$FTP_PASSWORD $FTP_SERVER; then
+          echo "✅ Deployment completed successfully!"
+        else
+          echo "⚠️ First attempt failed, trying with more conservative settings..."
+          lftp -e "set ftp:ssl-allow no; set net:timeout 120; set net:max-retries 5; set net:reconnect-interval-base 10; mirror -R ./dist /public_html --delete --verbose; quit" -u $FTP_USERNAME,$FTP_PASSWORD $FTP_SERVER
+          echo "✅ Deployment completed with fallback method!"
+        fi
