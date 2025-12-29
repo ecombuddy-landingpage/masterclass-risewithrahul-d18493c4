@@ -27,7 +27,7 @@ const Index = () => {
 
   return (
     <main className="min-h-screen bg-background">
-      <ThemeToggle />
+      {/* <ThemeToggle /> */}
       <HeroSection />
       
       {animatedSections.map(({ Component, delay }, index) => (
