@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useThemeInitialization } from "@/hooks/useThemeInitialization";
 import HeroSection from "@/components/HeroSection";
 import ProblemSection from "@/components/ProblemSection";
 import WhoIsThisFor from "@/components/WhoIsThisFor";
@@ -12,40 +12,30 @@ import StickyCtaBar from "@/components/StickyCtaBar";
 import ScrollAnimateWrapper from "@/components/ScrollAnimateWrapper";
 import ThemeToggle from "@/components/ThemeToggle";
 
+const animatedSections = [
+  { Component: WhoIsThisFor, delay: 0 },
+  { Component: ProblemSection, delay: 100 },
+  { Component: PhaseSection, delay: 100 },
+  { Component: MentorSection, delay: 100 },
+  { Component: WhatYouGet, delay: 100 },
+  { Component: BonusSection, delay: 100 },
+  { Component: CTASection, delay: 100 },
+];
+
 const Index = () => {
-  // Set dark mode as default on initial load
-  useEffect(() => {
-    const saved = localStorage.getItem("theme");
-    if (!saved) {
-      document.documentElement.classList.add("dark");
-    }
-  }, []);
+  useThemeInitialization();
 
   return (
     <main className="min-h-screen bg-background">
       <ThemeToggle />
       <HeroSection />
-      <ScrollAnimateWrapper>
-        <WhoIsThisFor />
-      </ScrollAnimateWrapper>
-      <ScrollAnimateWrapper delay={100}>
-        <ProblemSection />
-      </ScrollAnimateWrapper>
-      <ScrollAnimateWrapper delay={100}>
-        <PhaseSection />
-      </ScrollAnimateWrapper>
-      <ScrollAnimateWrapper delay={100}>
-        <MentorSection />
-      </ScrollAnimateWrapper>
-      <ScrollAnimateWrapper delay={100}>
-        <WhatYouGet />
-      </ScrollAnimateWrapper>
-      <ScrollAnimateWrapper delay={100}>
-        <BonusSection />
-      </ScrollAnimateWrapper>
-      <ScrollAnimateWrapper delay={100}>
-        <CTASection />
-      </ScrollAnimateWrapper>
+      
+      {animatedSections.map(({ Component, delay }, index) => (
+        <ScrollAnimateWrapper key={index} delay={delay}>
+          <Component />
+        </ScrollAnimateWrapper>
+      ))}
+      
       <Footer />
       <StickyCtaBar />
     </main>
