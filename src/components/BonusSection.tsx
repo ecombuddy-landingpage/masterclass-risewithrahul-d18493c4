@@ -13,7 +13,7 @@ const BonusSection = () => {
   return <section className="py-10 bg-card relative">
       <div className="container">
         <div className="max-w-4xl mx-auto">
-          <div className="relative bg-secondary border border-primary/30 rounded-3xl p-8 md:p-12 overflow-hidden shadow-soft">
+          <div className="relative bg-secondary border border-primary/30 rounded-2xl p-8 md:p-12 overflow-hidden shadow-soft">
             {/* Background decoration */}
             <div className="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl" />
             
