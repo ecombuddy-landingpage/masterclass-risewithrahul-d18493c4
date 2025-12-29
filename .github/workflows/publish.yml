@@ -33,5 +33,7 @@ jobs:
           REPO: self
           BRANCH: build # Push built files to build branch (for Hostinger)
           FOLDER: dist # The folder name in your project to be pushed
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MESSAGE: "Build: ({sha}) {msg}"
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # GitHub will automatically add this - you don't need to manually obtain a token
           MESSAGE: "Build: ({sha}) {msg}" # The commit message
