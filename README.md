@@ -1,5 +1,7 @@
 # Welcome to your Lovable project
 
+🚀 **Auto-deployment**: This project deploys automatically to https://masterclass.risewithrahul.com on every push to main branch.
+
 ## Project info
 
 **URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
