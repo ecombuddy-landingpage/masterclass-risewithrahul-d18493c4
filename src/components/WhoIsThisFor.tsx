@@ -9,9 +9,9 @@ const WhoIsThisFor = () => {
   ];
 
   return (
-    <section className="py-20 bg-background relative overflow-hidden">
+    <section className="py-10 bg-background relative overflow-hidden">
       <div className="container relative">
-        <div className="text-center mb-12">
+        <div className="text-center mb-6">
           <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 text-foreground">
             Who Is This <span className="text-primary">For?</span>
           </h2>

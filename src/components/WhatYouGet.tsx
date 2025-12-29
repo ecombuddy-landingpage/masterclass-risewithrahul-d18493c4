@@ -10,9 +10,9 @@ const WhatYouGet = () => {
   ];
 
   return (
-    <section className="py-20 bg-card relative">
+    <section className="py-10 bg-card relative">
       <div className="container">
-        <div className="text-center max-w-3xl mx-auto mb-12">
+        <div className="text-center max-w-3xl mx-auto mb-6">
           <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 text-foreground">
             What You <span className="text-primary">Get</span>
           </h2>

@@ -23,9 +23,9 @@ const PhaseSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-card relative">
+    <section className="py-10 bg-card relative">
       <div className="container">
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-8">
           <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 text-foreground">
             What You'll <span className="text-primary">Learn</span>
           </h2>
@@ -64,7 +64,7 @@ const PhaseSection = () => {
         </div>
 
         {/* Outcome */}
-        <div className="mt-16 bg-secondary border border-primary/20 rounded-2xl p-8 max-w-4xl mx-auto shadow-soft">
+        <div className="mt-8 bg-secondary border border-primary/20 rounded-2xl p-8 max-w-4xl mx-auto shadow-soft">
           <h3 className="font-display text-2xl font-bold text-center mb-8 text-primary">
             Your 90-Day Outcome
           </h3>

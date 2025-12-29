@@ -35,9 +35,9 @@ const MentorSection = () => {
   ];
 
   return (
-    <section className="py-12 sm:py-16 lg:py-20 bg-secondary relative overflow-hidden">
+    <section className="py-8 sm:py-10 bg-secondary relative overflow-hidden">
       <div className="container px-4 sm:px-6 relative">
-        <div className="text-center mb-8 sm:mb-12">
+        <div className="text-center mb-6 sm:mb-8">
           <span className="text-primary text-xs sm:text-sm font-semibold tracking-wider uppercase">Meet Your Mentor</span>
           <h2 className="font-display text-2xl sm:text-3xl lg:text-5xl font-bold mt-2 text-foreground">
             <span className="text-primary">Rahul Sharma</span>

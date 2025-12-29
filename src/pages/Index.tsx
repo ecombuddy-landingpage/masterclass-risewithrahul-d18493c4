@@ -4,7 +4,6 @@ import WhoIsThisFor from "@/components/WhoIsThisFor";
 import PhaseSection from "@/components/PhaseSection";
 import MentorSection from "@/components/MentorSection";
 import WhatYouGet from "@/components/WhatYouGet";
-import TestimonialsSection from "@/components/TestimonialsSection";
 import BonusSection from "@/components/BonusSection";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
@@ -19,7 +18,6 @@ const Index = () => {
       <PhaseSection />
       <MentorSection />
       <WhatYouGet />
-      <TestimonialsSection />
       <BonusSection />
       <CTASection />
       <Footer />

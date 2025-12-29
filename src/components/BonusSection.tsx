@@ -8,7 +8,7 @@ const BonusSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-card relative">
+    <section className="py-10 bg-card relative">
       <div className="container">
         <div className="max-w-4xl mx-auto">
           <div className="relative bg-secondary border border-primary/30 rounded-3xl p-8 md:p-12 overflow-hidden shadow-soft">
