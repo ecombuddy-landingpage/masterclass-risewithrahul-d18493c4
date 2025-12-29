@@ -24,15 +24,12 @@ jobs:
     - name: 🏗️ Build project
       run: bun run build
 
-    - name: 📂 Sync files to Hostinger
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+    - name: 📂 Deploy via SFTP
+      uses: wlixcc/SFTP-Deploy-Action@v1.2.4
       with:
         server: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: ./dist/
-        server-dir: /public_html/
-        clean: true
-        clean-exclude: |
-          .htaccess
-          cgi-bin/
+        local_path: './dist/*'
+        remote_path: '/public_html'
+        sftpArgs: '-o ConnectTimeout=5'
