@@ -9,6 +9,12 @@ const Footer = () => {
             <p className="text-muted-foreground text-sm">Build Your Brand, Own Your Future</p>
           </div>
           
+          <div className="flex items-center gap-2 text-sm">
+            <span className="text-primary font-bold">Offer ends soon:</span>
+            <span className="line-through text-muted-foreground">₹999</span>
+            <span className="text-primary font-extrabold text-lg">₹99</span>
+          </div>
+          
           <p className="text-muted-foreground text-xs">
             © {new Date().getFullYear()} All rights reserved.
           </p>

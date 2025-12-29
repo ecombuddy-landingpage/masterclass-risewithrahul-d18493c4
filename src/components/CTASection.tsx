@@ -23,7 +23,7 @@ const CTASection = () => {
             </div>
           </div>
 
-          <a href="https://risewithrahul.creatorlabs.in/add-to-cart" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground font-bold px-10 py-5 rounded-xl text-xl transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] shadow-glow-lg ring-4 ring-primary/30 animate-pulse-subtle group">
+          <a href="https://risewithrahul.creatorlabs.in/add-to-cart" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 cta-gradient hover:opacity-90 text-primary-foreground font-bold px-10 py-5 rounded-xl text-xl transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] shadow-glow-lg ring-4 ring-primary/30 animate-cta-shake group">
             🚀 Join the Masterclass Now
             <ArrowRight className="group-hover:translate-x-1 transition-transform w-[35px] h-[35px]" />
           </a>

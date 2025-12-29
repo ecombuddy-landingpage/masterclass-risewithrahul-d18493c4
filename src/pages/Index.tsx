@@ -29,7 +29,7 @@ const Index = () => {
     <main className="min-h-screen bg-background">
       <ThemeToggle />
       <HeroSection />
-      asd
+      
       {animatedSections.map(({ Component, delay }, index) => (
         <ScrollAnimateWrapper key={index} delay={delay}>
           <Component />
