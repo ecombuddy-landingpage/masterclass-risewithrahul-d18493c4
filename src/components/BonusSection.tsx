@@ -1,4 +1,4 @@
-import { FileCheck, Instagram, MessageSquare, Gift } from "lucide-react";
+import { FileCheck, Instagram, MessageSquare } from "lucide-react";
 const BonusSection = () => {
   const bonuses = [{
     icon: FileCheck,
@@ -18,16 +18,11 @@ const BonusSection = () => {
             <div className="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl" />
             
             <div className="relative">
-              <div className="flex flex-col sm:flex-row sm:items-center gap-3 mb-6">
-                <div className="w-12 h-12 rounded-xl bg-primary flex items-center justify-center">
-                  <Gift className="w-6 h-6 text-primary-foreground" />
-                </div>
-                <div>
+              <div className="mb-6">
                   <span className="bg-primary text-primary-foreground font-bold px-3 py-1.5 sm:px-4 rounded-xl text-lg sm:text-xl md:text-2xl inline-block max-w-[280px] sm:max-w-none leading-tight">Get bonuses worth ₹8,999 FREE 🎁</span>
                   <h2 className="font-display text-2xl font-bold text-foreground sm:text-2xl mx-0 px-0 my-[6px]">
                     For All Registrants
                   </h2>
-                </div>
               </div>
 
               <div className="grid sm:grid-cols-3 gap-4">
