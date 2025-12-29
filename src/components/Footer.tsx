@@ -9,13 +9,13 @@ const Footer = () => {
             <p className="text-muted-foreground text-sm">Build Your Brand, Own Your Future</p>
           </div>
           
-          <p className="text-muted-foreground text-sm">
+          <p className="text-muted-foreground text-xs">
             © {new Date().getFullYear()} All rights reserved.
           </p>
         </div>
         
         <div className="mt-1 pt-1 border-t border-border text-center">
-          <p className="text-muted-foreground text-sm">Phone Number – +91 74286 38805 | 
+          <p className="text-muted-foreground text-xs">Phone Number – +91 74286 38805 | 
 Email – contact@risewithrahul.com<a href="tel:+917428638805" className="text-primary hover:underline">+91 74286 38805</a> | Email – <a href="mailto:contact@risewithrahul.com" className="text-primary hover:underline">contact@risewithrahul.com</a>
           </p>
         </div>
