@@ -18,14 +18,16 @@ const BonusSection = () => {
             <div className="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl" />
             
             <div className="relative">
-              <div className="mb-6">
-                <span className="inline-flex items-center gap-2 bg-primary text-primary-foreground font-bold px-4 py-2 rounded-full text-2xl sm:text-3xl mb-2">
-                  <Gift className="w-6 h-6" />
-                  Free bonus worth ₹8999 FREE 🎁
-                </span>
-                <h2 className="font-display text-2xl font-bold text-foreground sm:text-2xl mx-0 px-0 my-[6px]">
-                  For All Registrants
-                </h2>
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-12 h-12 rounded-xl bg-primary flex items-center justify-center">
+                  <Gift className="w-6 h-6 text-primary-foreground" />
+                </div>
+                <div>
+                  <span className="bg-primary text-primary-foreground font-bold px-3 py-1 rounded-full text-3xl">Free bonus worth ₹8999 FREE 🎁  </span>
+                  <h2 className="font-display text-2xl font-bold text-foreground sm:text-2xl mx-0 px-0 my-[6px]">
+                    For All Registrants
+                  </h2>
+                </div>
               </div>
 
               <div className="grid sm:grid-cols-3 gap-4">
