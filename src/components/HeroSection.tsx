@@ -75,7 +75,7 @@ const HeroSection = () => {
             </div>
 
             {/* CTA Button */}
-            <a href="https://risewithrahul.creatorlabs.in/add-to-cart" target="_blank" rel="noopener noreferrer" className="block w-full bg-primary hover:bg-primary/90 text-primary-foreground text-center py-5 sm:py-6 rounded-xl font-bold text-lg sm:text-xl transition-all duration-300 shadow-glow-lg hover:shadow-glow hover:scale-[1.02] active:scale-[0.98] ring-4 ring-primary/30 animate-pulse-subtle">
+            <a href="#register" className="block w-full bg-primary hover:bg-primary/90 text-primary-foreground text-center py-5 sm:py-6 rounded-xl font-bold text-lg sm:text-xl transition-all duration-300 shadow-glow-lg hover:shadow-glow hover:scale-[1.02] active:scale-[0.98] ring-4 ring-primary/30 animate-pulse-subtle">
               🚀 Register Now At <span className="text-yellow-300 font-extrabold">Rs. 99/-</span>
             </a>
 
