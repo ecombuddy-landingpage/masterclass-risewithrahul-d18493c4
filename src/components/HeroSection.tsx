@@ -1,5 +1,5 @@
 import { Calendar, Clock, Video, Globe } from "lucide-react";
-import rahulPortrait from "@/assets/rahul-portrait.jpg";
+import rahulAward from "@/assets/rahul-award.jpg";
 
 const HeroSection = () => {
   const infoCards = [
@@ -35,8 +35,8 @@ const HeroSection = () => {
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-soft">
               <img
-                src={rahulPortrait}
-                alt="Rahul Sharma - Founder of Qurbat"
+                src={rahulAward}
+                alt="Rahul Sharma receiving International Business Award"
                 className="w-full h-auto object-cover"
               />
               
