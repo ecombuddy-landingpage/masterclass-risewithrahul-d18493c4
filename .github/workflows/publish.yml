@@ -3,7 +3,7 @@ name: Generate a build and push to another branch
 on:
   push:
     branches:
-      - build
+      - main
 
 permissions:
   contents: write
@@ -31,7 +31,7 @@ jobs:
         uses: s0/git-publish-subdir-action@develop
         env:
           REPO: self
-          BRANCH: main # Push built files to main branch
+          BRANCH: build # Push built files to build branch (for Hostinger)
           FOLDER: dist # The folder name in your project to be pushed
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # GitHub will automatically add this - you don't need to manually obtain a token
           MESSAGE: "Build: ({sha}) {msg}" # The commit message
