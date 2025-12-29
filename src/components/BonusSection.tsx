@@ -23,7 +23,7 @@ const BonusSection = () => {
                   <Gift className="w-6 h-6 text-primary-foreground" />
                 </div>
                 <div>
-                  <span className="bg-primary text-primary-foreground font-bold px-3 py-1 rounded-full text-3xl">Get bonuses worth ₹8,999 FREE 🎁</span>
+                  <span className="bg-primary text-primary-foreground font-bold px-2 py-1 sm:px-3 rounded-xl text-base sm:text-xl md:text-2xl">Get bonuses worth ₹8,999 FREE 🎁</span>
                   <h2 className="font-display text-2xl font-bold text-foreground sm:text-2xl mx-0 px-0 my-[6px]">
                     For All Registrants
                   </h2>
