@@ -282,3 +282,25 @@
   opacity: 1;
   transform: translateX(0);
 }
+
+/* CTA Button Shake Animation */
+@keyframes cta-shake {
+  0%, 100% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-2px); }
+  20%, 40%, 60%, 80% { transform: translateX(2px); }
+}
+
+.animate-cta-shake {
+  animation: cta-shake 0.5s ease-in-out;
+  animation-delay: 2s;
+  animation-iteration-count: 3;
+}
+
+/* CTA Gradient */
+.cta-gradient {
+  background: linear-gradient(180deg, hsl(145 65% 45%) 0%, hsl(145 70% 32%) 100%);
+}
+
+.dark .cta-gradient {
+  background: linear-gradient(180deg, hsl(145 65% 50%) 0%, hsl(145 70% 38%) 100%);
+}
