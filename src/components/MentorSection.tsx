@@ -54,7 +54,7 @@ const MentorSection = () => {
           {/* Content */}
           <div className="space-y-6">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
-              {credentials.map((item, index) => <div key={index} className="flex items-center gap-3 bg-card border border-border rounded-xl p-3 sm:p-4 shadow-card">
+              {credentials.map((item, index) => <div key={index} className="flex items-center gap-3 bg-card border border-border rounded-lg p-3 sm:p-4 shadow-card">
                   <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
                     <item.icon className="w-4 h-4 sm:w-5 sm:h-5 text-primary" />
                   </div>
@@ -66,7 +66,7 @@ const MentorSection = () => {
               Rahul has helped <span className="text-primary font-semibold">15,000+ Indian sellers</span> build their own clothing brands and grow independent businesses online — no coding, no big budgets.
             </p>
 
-            <blockquote className="border-l-4 border-primary pl-4 sm:pl-6 py-2 bg-card rounded-r-xl">
+            <blockquote className="border-l-4 border-primary pl-4 sm:pl-6 py-2 bg-card rounded-r-lg">
               <p className="text-foreground italic text-base sm:text-lg">
                 "You don't need a tech background or big team — just the right guidance and 90 days of focus."
               </p>
