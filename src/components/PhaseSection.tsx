@@ -16,7 +16,7 @@ const PhaseSection = () => {
     icon: TrendingUp,
     description: "Run ads, retarget customers, grow traffic & automate"
   }];
-  return <section className="py-20 bg-card relative">
+  return <section className="pt-12 pb-20 bg-card relative">
       <div className="container">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 text-foreground">
