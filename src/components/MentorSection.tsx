@@ -1,6 +1,6 @@
 import { Award, Users, Briefcase, Instagram, Quote } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import rahulTeaching from "@/assets/rahul-teaching-workshop.png";
+import rahulTeaching from "@/assets/rahul-teaching-workshop.webp";
 import avatarPriya from "@/assets/avatar-priya.png";
 import avatarImran from "@/assets/avatar-imran.png";
 import avatarRohan from "@/assets/avatar-rohan.png";
