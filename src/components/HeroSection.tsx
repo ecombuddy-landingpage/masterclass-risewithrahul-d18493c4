@@ -82,7 +82,7 @@ const HeroSection = () => {
             <div className="relative rounded-2xl overflow-hidden shadow-glow bg-black/5 dark:bg-black/20">
               <img 
                 alt="Rahul Sharma receiving International Business Award" 
-                className="w-full h-full object-cover object-top aspect-[3/4] sm:aspect-[4/3] lg:aspect-auto" 
+                className="w-full h-auto sm:h-full sm:object-cover sm:object-top sm:aspect-[4/3] lg:aspect-auto" 
                 src={rahulAward} 
                 fetchPriority="high" 
                 width={750} 
