@@ -79,20 +79,18 @@ const HeroSection = () => {
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start max-w-6xl mx-auto">
           {/* Left - Image with Info */}
           <div className="relative">
-            <div className="relative rounded-2xl overflow-hidden shadow-glow min-h-[400px] sm:min-h-[450px] lg:min-h-[500px]">
-              <img alt="Rahul Sharma receiving International Business Award" className="w-full h-full object-cover object-center absolute inset-0" src={rahulAward} fetchPriority="high" width={750} height={500} />
+            <div className="relative rounded-2xl overflow-hidden shadow-glow bg-black/5 dark:bg-black/20">
+              <img alt="Rahul Sharma receiving International Business Award" className="w-full h-auto object-contain" src={rahulAward} fetchPriority="high" width={750} height={500} />
               
               {/* Overlay Info */}
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/70 to-transparent p-5 sm:p-6">
-                <div className="bg-black/50 backdrop-blur-sm rounded-lg p-3 sm:p-4">
-                  <h3 className="font-display text-lg sm:text-xl text-white drop-shadow-[0_2px_6px_rgba(0,0,0,1)] mb-1 font-extrabold">Rahul Sharma – Founder & CEO of Qurbat</h3>
-                  <p className="text-yellow-300 drop-shadow-[0_2px_4px_rgba(0,0,0,0.9)] text-sm font-semibold">
-                    (Multi-City Fashion Brand)
-                  </p>
-                  <p className="text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.9)] text-xs sm:text-sm mt-2">
-                    IIM Ahmedabad Alumnus, 15L+ Community Mentor, TEDx Speaker & Retail Excellence Awardee
-                  </p>
-                </div>
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent p-4 sm:p-5">
+                <h3 className="font-display text-base sm:text-lg lg:text-xl text-white drop-shadow-[0_2px_8px_rgba(0,0,0,1)] mb-1 font-extrabold">Rahul Sharma – Founder & CEO of Qurbat</h3>
+                <p className="text-yellow-300 drop-shadow-[0_2px_6px_rgba(0,0,0,1)] text-xs sm:text-sm font-semibold">
+                  (Multi-City Fashion Brand)
+                </p>
+                <p className="text-white drop-shadow-[0_2px_6px_rgba(0,0,0,1)] text-xs mt-1 sm:mt-2">
+                  IIM Ahmedabad Alumnus, 15L+ Community Mentor, TEDx Speaker & Retail Excellence Awardee
+                </p>
               </div>
             </div>
           </div>
