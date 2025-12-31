@@ -82,16 +82,29 @@ const HeroSection = () => {
             <div className="relative rounded-2xl overflow-hidden shadow-glow bg-black/5 dark:bg-black/20">
               <img alt="Rahul Sharma receiving International Business Award" className="w-full h-auto object-contain" src={rahulAward} fetchPriority="high" width={750} height={500} />
               
-              {/* Overlay Info */}
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent p-4 sm:p-5">
-                <h3 className="font-display text-base sm:text-lg lg:text-xl text-white drop-shadow-[0_2px_8px_rgba(0,0,0,1)] mb-1 font-extrabold">Rahul Sharma – Founder & CEO of Qurbat</h3>
-                <p className="text-yellow-300 drop-shadow-[0_2px_6px_rgba(0,0,0,1)] text-xs sm:text-sm font-semibold">
+              {/* Overlay Info - Hidden on mobile, visible on sm and above */}
+              <div className="hidden sm:block absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent p-4 sm:p-5">
+                <h3 className="font-display text-lg lg:text-xl text-white drop-shadow-[0_2px_8px_rgba(0,0,0,1)] mb-1 font-extrabold">Rahul Sharma – Founder & CEO of Qurbat</h3>
+                <p className="text-yellow-300 drop-shadow-[0_2px_6px_rgba(0,0,0,1)] text-sm font-semibold">
                   (Multi-City Fashion Brand)
                 </p>
-                <p className="text-white drop-shadow-[0_2px_6px_rgba(0,0,0,1)] text-xs mt-1 sm:mt-2">
+                <p className="text-white drop-shadow-[0_2px_6px_rgba(0,0,0,1)] text-xs mt-2">
                   IIM Ahmedabad Alumnus, 15L+ Community Mentor, TEDx Speaker & Retail Excellence Awardee
                 </p>
               </div>
+            </div>
+            
+            {/* Mobile Text Card - Visible only on mobile, hidden on sm and above */}
+            <div className="sm:hidden mt-4 bg-card rounded-xl p-4 shadow-card border border-border">
+              <h3 className="font-display text-lg text-foreground mb-1 font-extrabold">
+                Rahul Sharma – Founder & CEO of Qurbat
+              </h3>
+              <p className="text-primary text-sm font-semibold">
+                (Multi-City Fashion Brand)
+              </p>
+              <p className="text-muted-foreground text-xs mt-2">
+                IIM Ahmedabad Alumnus, 15L+ Community Mentor, TEDx Speaker & Retail Excellence Awardee
+              </p>
             </div>
           </div>
 
