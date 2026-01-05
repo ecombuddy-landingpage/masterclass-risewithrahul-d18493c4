@@ -49,7 +49,7 @@ const HeroSection = () => {
   }, {
     icon: Video,
     label: "Platform",
-    value: "Zoom",
+    value: "Online",
     subtext: ""
   }, {
     icon: Globe,
