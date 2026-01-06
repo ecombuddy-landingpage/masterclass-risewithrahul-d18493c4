@@ -40,7 +40,7 @@ const HeroSection = () => {
     icon: Calendar,
     label: "Date",
     value: "8th January",
-    subtext: "(Wednesday)"
+    subtext: "(Thursday)"
   }, {
     icon: Clock,
     label: "Time",
