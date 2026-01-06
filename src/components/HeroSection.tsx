@@ -40,7 +40,7 @@ const HeroSection = () => {
     icon: Calendar,
     label: "Date",
     value: "8th January",
-    subtext: "(Thursday)"
+    subtext: "(Wednesday)"
   }, {
     icon: Clock,
     label: "Time",
@@ -58,15 +58,15 @@ const HeroSection = () => {
     subtext: ""
   }];
 
-  return <section className="min-h-screen bg-gradient-hero pb-12">
-      {/* Top Badge - Full width at very top */}
-      <div className="flex justify-center py-4 bg-primary/10">
-        <div className="inline-flex items-center bg-primary text-primary-foreground rounded-full px-8 py-4 text-base sm:text-lg font-bold shadow-soft">
-          For Aspiring Brand Owners
+  return <section className="min-h-screen bg-gradient-hero pt-6 pb-12">
+      <div className="container">
+        {/* Top Badge */}
+        <div className="flex justify-center mb-8">
+          <div className="inline-flex items-center bg-primary text-primary-foreground rounded-full px-8 py-4 text-base sm:text-lg font-bold shadow-soft">
+            For Aspiring Brand Owners
+          </div>
         </div>
-      </div>
 
-      <div className="container pt-6">
         {/* Main Headline */}
         <div className="text-center max-w-4xl mx-auto mb-12">
           <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground leading-tight mb-2">Join 2-Hours Live Masterclass</h1>
