@@ -1,7 +1,7 @@
 import { ArrowRight } from "lucide-react";
 const StickyCtaBar = () => {
   return <div className="fixed bottom-0 left-0 right-0 z-50 bg-primary shadow-glow border-t border-primary/20">
-      <div className="container py-3 sm:py-4">
+      <div className="container py-2 sm:py-3">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-3 text-primary-foreground">
           <div className="text-primary-foreground text-center sm:text-left">
             <p className="sm:text-base text-base font-extrabold text-primary-foreground">
