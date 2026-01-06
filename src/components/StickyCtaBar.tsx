@@ -7,7 +7,7 @@ const StickyCtaBar = () => {
             <p className="text-xs text-primary-foreground/80 mb-1 font-bold sm:text-base px-0">
               The Live Masterclass is on{" "}
               <span className="font-bold text-yellow-300">
-                8th January - Wednesday from 12 PM
+                8th January - Thursday from 12 PM
               </span>
             </p>
             <p className="sm:text-base text-base font-extrabold text-primary-foreground">
