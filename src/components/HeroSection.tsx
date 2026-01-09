@@ -11,8 +11,8 @@ const HeroSection = () => {
   });
 
   useEffect(() => {
-    // Target date: 8th January 2026, 12:00 PM IST
-    const targetDate = new Date("2026-01-08T12:00:00+05:30");
+    // Target date: 17th January 2026, 4:00 PM IST
+    const targetDate = new Date("2026-01-17T16:00:00+05:30");
 
     const calculateTimeLeft = () => {
       const now = new Date();
@@ -39,12 +39,12 @@ const HeroSection = () => {
   const infoCards = [{
     icon: Calendar,
     label: "Date",
-    value: "8th January",
-    subtext: "(Wednesday)"
+    value: "17th January",
+    subtext: "(Saturday)"
   }, {
     icon: Clock,
     label: "Time",
-    value: "12 PM",
+    value: "4 PM",
     subtext: ""
   }, {
     icon: Video,
