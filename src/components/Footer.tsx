@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   return <footer className="py-2 border-t border-border bg-card pb-20">
       <div className="container">
@@ -9,9 +11,9 @@ const Footer = () => {
             <p className="text-muted-foreground text-sm">Build Your Brand, Own Your Future</p>
           </div>
           
-          <p className="text-muted-foreground text-xs">
-            © {new Date().getFullYear()} All rights reserved.
-          </p>
+          <Link to="/contact" className="text-primary hover:underline text-xs font-medium">
+            Contact Us
+          </Link>
         </div>
         
         <div className="mt-1 pt-1 border-t border-border text-center">
